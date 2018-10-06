@@ -102,3 +102,135 @@ body {
     background: #FFFF99;
     font-size: 20px;
 }
+
+
+/* media queries for deck */
+
+/* for device width 850px and below */
+@media screen and (max-width: 800px) {
+  .deck {
+      width: 480px;
+      min-height: 500px;
+      background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 3em;
+  }
+
+  .deck .card {
+      height: 100px;
+      width: 100px;
+      background: #CD853F;
+      font-size: 0;
+      color: #000000;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  }
+
+  .deck .card.show {
+      font-size: 18px;
+  }
+
+  .deck .card.match {
+      cursor: default;
+      background: #FFFF99;
+      font-size: 18px;
+  }
+}
+
+/* for device width 650px and below */
+@media screen and (max-width: 650px) {
+  .deck {
+      width: 370px;
+      min-height: 380px;
+      background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 3em;
+  }
+
+  .deck .card {
+      height: 75px;
+      width: 75px;
+      background: #CD853F;
+      font-size: 0;
+      color: #000000;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  }
+
+  .deck .card.show {
+      font-size: 13px;
+  }
+
+  .deck .card.match {
+      cursor: default;
+      background: #FFFF99;
+      font-size: 13px;
+  }
+}
+
+/* for device width 500px and below */
+@media screen and (max-width: 500px) {
+  .deck {
+      width: 260px;
+      min-height: 270px;
+      background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 3em;
+  }
+
+  .deck .card {
+      height: 60px;
+      width: 60px;
+      background: #CD853F;
+      font-size: 0;
+      color: #000000;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  }
+
+  .score-panel {
+      text-align: left;
+      width: 240px;
+      margin-bottom: 10px;
+  }
+
+  .deck .card.show {
+      font-size: 11px;
+  }
+
+  .deck .card.match {
+      cursor: default;
+      background: #FFFF99;
+      font-size: 11px;
+  }
+}
