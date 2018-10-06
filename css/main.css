@@ -1,0 +1,104 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 10 15 10 10;
+  padding: 0;
+  background-image: url("../img/scroll-sakura.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #C71585;
+  font-family: 'Finger Paint', cursive;
+}
+
+
+/*container*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*header*/
+.header {
+  font-size: 250%;
+  text-align: center;
+}
+
+.header .icon {
+  max-height: 80px;
+}
+
+
+/* score panel */
+.score-panel {
+    text-align: left;
+    width: 320px; /*Change later*/
+    margin-bottom: 10px;
+}
+
+.score-panel .frogs {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .frogs li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .redo {
+    float: right;
+    cursor: pointer;
+}
+
+
+/* deck */
+.deck {
+    width: 620px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #CD853F;
+    font-size: 0;
+    color: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #FFF8DC;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 20px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #FFFF99;
+    font-size: 20px;
+}
