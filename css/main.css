@@ -14,10 +14,10 @@ body {
 
 /*container*/
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -34,35 +34,85 @@ body {
 
 /* score panel */
 .score-panel {
-    text-align: left;
-    width: 320px; /*Change later*/
-    margin-bottom: 10px;
+  text-align: left;
+  width: 320px;
+  margin-bottom: 10px;
 }
 
 .score-panel .frogs {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin: 0 5px 0 0;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
 }
 
 .score-panel .frogs li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 
 .score-panel .redo {
-    float: right;
-    cursor: pointer;
+  float: right;
+  cursor: pointer;
 }
 
 
 /* deck */
 .deck {
-    width: 620px;
-    min-height: 680px;
+  width: 620px;
+  min-height: 680px;
+  background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3em;
+}
+
+
+.deck .card {
+  height: 125px;
+  width: 125px;
+  background: #CD853F;
+  font-size: 0;
+  color: #000000;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+  transform: rotateY(0);
+  background: #FFF8DC;
+  cursor: default;
+}
+
+.deck .card.show {
+  font-size: 20px;
+}
+
+.deck .card.match {
+  cursor: default;
+  background: #FFFF99;
+  font-size: 20px;
+}
+
+
+/* media queries for deck */
+
+/* for device width 850px and below */
+@media screen and (max-width: 800px) {
+  .deck {
+    width: 480px;
+    min-height: 500px;
     background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
-    padding: 32px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
     display: flex;
@@ -70,12 +120,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 0 3em;
-}
+  }
 
-
-.deck .card {
-    height: 125px;
-    width: 125px;
+  .deck .card {
+    height: 100px;
+    width: 100px;
     background: #CD853F;
     font-size: 0;
     color: #000000;
@@ -85,152 +134,164 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
-}
-
-.deck .card.open {
-    transform: rotateY(0);
-    background: #FFF8DC;
-    cursor: default;
-}
-
-.deck .card.show {
-    font-size: 20px;
-}
-
-.deck .card.match {
-    cursor: default;
-    background: #FFFF99;
-    font-size: 20px;
-}
-
-
-/* media queries for deck */
-
-/* for device width 850px and below */
-@media screen and (max-width: 800px) {
-  .deck {
-      width: 480px;
-      min-height: 500px;
-      background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 0 3em;
-  }
-
-  .deck .card {
-      height: 100px;
-      width: 100px;
-      background: #CD853F;
-      font-size: 0;
-      color: #000000;
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
   }
 
   .deck .card.show {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .deck .card.match {
-      cursor: default;
-      background: #FFFF99;
-      font-size: 18px;
+    cursor: default;
+    background: #FFFF99;
+    font-size: 18px;
   }
 }
 
 /* for device width 650px and below */
 @media screen and (max-width: 650px) {
   .deck {
-      width: 370px;
-      min-height: 380px;
-      background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 0 3em;
+    width: 370px;
+    min-height: 380px;
+    background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
   }
 
   .deck .card {
-      height: 75px;
-      width: 75px;
-      background: #CD853F;
-      font-size: 0;
-      color: #000000;
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    height: 75px;
+    width: 75px;
+    background: #CD853F;
+    font-size: 0;
+    color: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
   }
 
   .deck .card.show {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .deck .card.match {
-      cursor: default;
-      background: #FFFF99;
-      font-size: 13px;
+    cursor: default;
+    background: #FFFF99;
+    font-size: 13px;
   }
 }
 
 /* for device width 500px and below */
 @media screen and (max-width: 500px) {
   .deck {
-      width: 260px;
-      min-height: 270px;
-      background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0 0 3em;
+    width: 260px;
+    min-height: 270px;
+    background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
   }
 
   .deck .card {
-      height: 60px;
-      width: 60px;
-      background: #CD853F;
-      font-size: 0;
-      color: #000000;
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    height: 60px;
+    width: 60px;
+    background: #CD853F;
+    font-size: 0;
+    color: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
   }
 
   .score-panel {
-      text-align: left;
-      width: 260px;
-      margin-bottom: 10px;
+    text-align: left;
+    width: 260px;
+    margin-bottom: 10px;
   }
 
   .deck .card.show {
-      font-size: 11px;
+    font-size: 11px;
   }
 
   .deck .card.match {
-      cursor: default;
-      background: #FFFF99;
-      font-size: 11px;
+    cursor: default;
+    background: #FFFF99;
+    font-size: 11px;
   }
+}
+
+
+/* Modal and modal overlay implementation learnt from css tricks */
+.modal-happy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 600px;
+  max-width: 100%;
+  height: 510px;
+  max-height: 100%;
+  z-index: 1010;
+  text-align: center;
+  display: none;
+}
+
+.modal-happy .image {
+  width: 600px;
+  max-width: 100%;
+}
+
+.modal-angry {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 600px;
+  max-width: 100%;
+  height: 510px;
+  max-height: 100%;
+  z-index: 1010;
+  text-align: center;
+  display: none;
+}
+
+.modal-angry .image {
+  width: 600px;
+  max-width: 100%;
+}
+
+.modal-overlay {
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1000;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+
+/* Game reload function */
+.reload {
+   cursor: pointer;
+   color: blue;
 }
