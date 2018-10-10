@@ -7,8 +7,8 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: #C71585;
-  font-family: 'Finger Paint', cursive;
+  background-color: #c71585;
+  font-family: "Finger Paint", cursive;
 }
 
 
@@ -61,7 +61,7 @@ body {
 .deck {
   width: 620px;
   min-height: 680px;
-  background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+  background: linear-gradient(160deg, #d2b48c 0%, #fffacd 100%);
   padding: 32px;
   border-radius: 10px;
   box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
@@ -76,9 +76,9 @@ body {
 .deck .card {
   height: 125px;
   width: 125px;
-  background: #CD853F;
+  background: #cd853f;
   font-size: 0;
-  color: #000000;
+  color: #000;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -89,7 +89,7 @@ body {
 
 .deck .card.open {
   transform: rotateY(0);
-  background: #FFF8DC;
+  background: #fff8dc;
   cursor: default;
 }
 
@@ -99,7 +99,7 @@ body {
 
 .deck .card.match {
   cursor: default;
-  background: #FFFF99;
+  background: #ffff99;
   font-size: 20px;
 }
 
@@ -111,7 +111,7 @@ body {
   .deck {
     width: 480px;
     min-height: 500px;
-    background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+    background: linear-gradient(160deg, #d2b48c 0%, #fffacd 100%);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
@@ -125,9 +125,9 @@ body {
   .deck .card {
     height: 100px;
     width: 100px;
-    background: #CD853F;
+    background: #cd853f;
     font-size: 0;
-    color: #000000;
+    color: #000;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -142,7 +142,7 @@ body {
 
   .deck .card.match {
     cursor: default;
-    background: #FFFF99;
+    background: #ffff99;
     font-size: 18px;
   }
 }
@@ -152,7 +152,7 @@ body {
   .deck {
     width: 370px;
     min-height: 380px;
-    background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+    background: linear-gradient(160deg, #d2b48c 0%, #fffacd 100%);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
@@ -166,9 +166,9 @@ body {
   .deck .card {
     height: 75px;
     width: 75px;
-    background: #CD853F;
+    background: #cd853f;
     font-size: 0;
-    color: #000000;
+    color: #000;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -183,7 +183,7 @@ body {
 
   .deck .card.match {
     cursor: default;
-    background: #FFFF99;
+    background: #ffff99;
     font-size: 13px;
   }
 }
@@ -193,7 +193,7 @@ body {
   .deck {
     width: 260px;
     min-height: 270px;
-    background: linear-gradient(160deg, #D2B48C 0%, #FFFACD 100%);
+    background: linear-gradient(160deg, #d2b48c 0%, #fffacd 100%);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
@@ -207,9 +207,9 @@ body {
   .deck .card {
     height: 60px;
     width: 60px;
-    background: #CD853F;
+    background: #cd853f;
     font-size: 0;
-    color: #000000;
+    color: #000;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -230,7 +230,7 @@ body {
 
   .deck .card.match {
     cursor: default;
-    background: #FFFF99;
+    background: #ffff99;
     font-size: 11px;
   }
 }
