@@ -14,75 +14,72 @@
 
       <header>
         <p class="header">Kanji Memory Game <img src="img/cat.gif" alt="cat" align="bottom" class="icon"></p>
-        <!--Match the Kanji with their meaning in 3 turns!
-        失敗したら猫が怒ちゃう！！-->
-
+        <!--Match the Kanji with their meaning in 3 turns! 失敗したら猫が怒ちゃう！！-->
       </header>
 
+      <!-- Score panel -->
       <section class="score-panel">
+        <!-- Number of frogs left to win -->
         <ul class="frogs">
           <li><i class="fas fa-frog"></i></li>
           <li><i class="fas fa-frog"></i></li>
           <li><i class="fas fa-frog"></i></li>
         </ul>
+        <!-- Moves left -->
         <span class="moves">0</span> moves
+        <!-- Time left -->
         <span class="timer">0</span> sec
+        <!-- Game reset button -->
         <i class="fas fa-redo redo"></i>
       </section>
 
+      <!-- Deck of cards -->
       <ul class="deck">
-          <li class="card">
-              fish
-          </li>
-          <li class="card">
-              外
-          </li>
-          <li class="card">
-              多
-          </li>
-          <li class="card">
-              電
-          </li>
-          <li class="card">
-              rain
-          </li>
-          <li class="card">
-              many
-          </li>
-          <li class="card">
-              雨
-          </li>
-          <li class="card">
-              outside
-          </li>
-          <li class="card">
-              drink
-          </li>
-          <li class="card">
-              飲
-          </li>
-          <li class="card">
-              station
-          </li>
-          <li class="card">
-              eat
-          </li>
-          <li class="card">
-              魚
-          </li>
-          <li class="card">
-              駅
-          </li>
-          <li class="card">
-              electricity
-          </li>
-          <li class="card">
-              食
-          </li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
+        <li class="card"></li>
       </ul>
 
     </div>
-    
+
+    <!-- Modal to appear up if game won -->
+    <div class="modal-happy">
+      <img src="img/happy-cat.gif" alt="happy-cat" align ="center" class="image">
+      <h2>Congratulations!</h2>
+      <p> It took you:
+        <span class="mov">0</span> moves &
+        <span class="tim">0</span> sec
+      </p>
+      <p> Number of frogs won:
+        <span class="frog">0</span>
+      </p>
+      <p class="reload">Want to play again?</p>
+    </div>
+
+    <!-- Modal to appear if game lost -->
+    <div class="modal-angry">
+      <img src="img/angry-cat.gif" alt="angry-cat" align ="center" class="image">
+      <h2>You failed to match the cards in time!!</h2>
+      <p class="reload">Try again?</p>
+    </div>
+
+    <!-- Overlay background to bring focus on modal -->
+    <div class="modal-overlay">
+    </div>
+
   </body>
 
 <script src="js/main.js"></script>
