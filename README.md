@@ -2,7 +2,7 @@
 
 ![alt text](img/game-screenshot.png)
 
-Match the Kanji with their meaning before time runs up!
+Match the Kanji with their meaning before time runs out!
 
 Gameplay:
 1. The player can flip 2 cards at a time, which shall be counted as one move
