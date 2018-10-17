@@ -1,86 +1,87 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kanji Memory Game</title>
-    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  </head>
 
-  <body>
-    <div class="container">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanji Memory Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
 
-      <header>
-        <p class="header">Kanji Memory Game <img src="img/cat.gif" alt="cat" align="bottom" class="icon"></p>
-        <!--Match the Kanji with their meaning in 3 turns! 失敗したら猫が怒ちゃう！！-->
-      </header>
+<body>
+  <div class="container">
 
-      <!-- Score panel -->
-      <section class="score-panel">
-        <!-- Number of frogs left to win -->
-        <ul class="frogs">
-          <li><i class="fas fa-frog"></i></li>
-          <li><i class="fas fa-frog"></i></li>
-          <li><i class="fas fa-frog"></i></li>
-        </ul>
-        <!-- Moves left -->
-        <span class="moves">0</span> moves
-        <!-- Time left -->
-        <span class="timer">0</span> sec
-        <!-- Game reset button -->
-        <i class="fas fa-redo redo"></i>
-      </section>
+    <header>
+      <p class="header">Kanji Memory Game <img src="img/cat.gif" alt="cat" align="bottom" class="icon"></p>
+      <!--Match the Kanji with their meaning in 3 turns! 失敗したら猫が怒ちゃう！！-->
+    </header>
 
-      <!-- Deck of cards -->
-      <ul class="deck">
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
-        <li class="card"></li>
+    <!-- Score panel -->
+    <section class="score-panel">
+      <!-- Number of frogs left to win -->
+      <ul class="frogs">
+        <li><i class="fas fa-frog"></i></li>
+        <li><i class="fas fa-frog"></i></li>
+        <li><i class="fas fa-frog"></i></li>
       </ul>
+      <!-- Moves left -->
+      <span class="moves">0</span> moves
+      <!-- Time left -->
+      <span class="timer">0</span> sec
+      <!-- Game reset button -->
+      <i class="fas fa-redo redo"></i>
+    </section>
 
-    </div>
+    <!-- Deck of cards -->
+    <ul class="deck">
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+      <li class="card"></li>
+    </ul>
 
-    <!-- Modal to appear up if game won -->
-    <div class="modal-happy">
-      <img src="img/happy-cat.gif" alt="happy-cat" align ="center" class="image">
-      <h2>Congratulations!</h2>
-      <p> It took you:
-        <span class="mov">0</span> moves &
-        <span class="tim">0</span> sec
-      </p>
-      <p> Number of frogs won:
-        <span class="frog">0</span>
-      </p>
-      <p class="reload">Want to play again?</p>
-    </div>
+  </div>
 
-    <!-- Modal to appear if game lost -->
-    <div class="modal-angry">
-      <img src="img/angry-cat.gif" alt="angry-cat" align ="center" class="image">
-      <h2>You failed to match the cards in time!!</h2>
-      <p class="reload">Try again?</p>
-    </div>
+  <!-- Modal to appear up if game won -->
+  <div class="modal-happy">
+    <img src="img/happy-cat.gif" alt="happy-cat" align="center" class="image">
+    <h2>Congratulations!</h2>
+    <p> It took you:
+      <span class="mov">0</span> moves &
+      <span class="tim">0</span> sec
+    </p>
+    <p> Number of frogs won:
+      <span class="frog">0</span>
+    </p>
+    <p class="reload">Want to play again?</p>
+  </div>
 
-    <!-- Overlay background to bring focus on modal -->
-    <div class="modal-overlay">
-    </div>
+  <!-- Modal to appear if game lost -->
+  <div class="modal-angry">
+    <img src="img/angry-cat.gif" alt="angry-cat" align="center" class="image">
+    <h2>You failed to match the cards in time!!</h2>
+    <p class="reload">Try again?(y/n)</p>
+  </div>
 
-  </body>
+  <!-- Overlay background to bring focus on modal -->
+  <div class="modal-overlay">
+  </div>
+
+</body>
 
 <script src="js/main.js"></script>
 
