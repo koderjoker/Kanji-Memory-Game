@@ -1,6 +1,6 @@
 # Kanji Memory Game
 
-![alt text](img/game-screenshot.png)
+![Game Screenshot](img/game-screenshot.png)
 
 Match every Kanji with its meaning before time runs out!
 
